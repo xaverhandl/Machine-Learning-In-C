@@ -5,10 +5,11 @@
 
 
 int main(void){
-    double array_data[400][15];
-    loadData("processed.cleveland.data.txt",array_data);
-    for(int i = 0; i<303; ++i){
-        for(int j = 0; j<14; ++i){
+    double array_data[400][20];
+    int labels[400];
+    loadData("processed.cleveland.data.txt",array_data,labels);
+    for(int i = 0; i<30; ++i){
+        for(int j = 0; j<10; ++i){
             printf("%lf ",array_data[i][j]);
         }
         printf("\n");
